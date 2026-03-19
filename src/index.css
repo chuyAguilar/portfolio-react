@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling for the whole document */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Inter", system-ui, sans-serif;
+	background-color: #0f1413;
+	color: #e6ecea;
+	margin: 0;
+	line-height: 1.5;
+}
+
+/* Scrollbar styling for projects track */
+.projects-track::-webkit-scrollbar {
+	height: 6px;
+}
+
+.projects-track::-webkit-scrollbar-thumb {
+	background-color: #2f8f7a;
+	border-radius: 4px;
+}
