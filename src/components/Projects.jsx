@@ -27,8 +27,8 @@ const PROJECTS = [
 		image: '/images/ValleDeBravo.jpeg',
 		alt: 'Foto publica del proyecto ValleDeBravo',
 		title: 'ValleDeBravo',
-		description: 'Participé en un programa intensivo enfocado en el desarrollo de soluciones tecnológicas para problemáticas globales, colaborando con estudiantes de distintas instituciones.',
-		stack: ['Python', 'Node', 'React', 'MongoDB']
+		description: 'Instalación y configuración de infraestructura tecnológica, incluyendo equipos de cómputo, redes, impresoras 3D y sistemas robóticos, asegurando su correcta integración y funcionamiento para demostraciones.',
+		stack: ['Sistemas', 'Redes', 'Robótica', 'Impresión 3D', 'Integración de hardware']
 	},
 	{
 		image: '/images/Jetbot_encerrado.mp4',
@@ -94,8 +94,7 @@ function Projects() {
 				<div className="
 					projects-track
 					flex gap-8 overflow-x-auto
-					md:grid md:grid-cols-2 md:overflow-x-visible
-					lg:grid-cols-4
+					md:grid md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] md:gap-8 md:overflow-x-visible
 					px-8 pb-4
 				">
 					{PROJECTS.map((project) => (

@@ -11,7 +11,7 @@
  */
 function ProjectCard({ image, alt, title, description, stack, href }) {
 	return (
-		<div className="flex-none w-[340px] border-2 border-jade rounded-2xl flex flex-col overflow-hidden">
+		<div className="flex-none w-[85vw] sm:w-[340px] md:w-full max-w-[400px] mx-auto h-full border-2 border-jade rounded-2xl flex flex-col overflow-hidden">
 
 			{/* Preview image */}
 			<div className="flex justify-center items-center bg-black/20 border-b-2 border-jade overflow-hidden">
