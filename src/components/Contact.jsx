@@ -55,7 +55,7 @@ function Contact() {
 		>
 			{/* Section heading */}
 			<h2 className="text-4xl sm:text-5xl font-bold text-center mb-14 cursor-default">
-				<span className="text-textMain">Conectemos </span>
+				<span className="text-textMain">Contactame	 </span>
 				<span className="text-jade">Hoy</span>
 			</h2>
 
