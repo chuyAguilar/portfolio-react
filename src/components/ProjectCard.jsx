@@ -14,11 +14,11 @@ function ProjectCard({ image, alt, title, description, stack, href }) {
 		<div className="flex-none w-[340px] border-2 border-jade rounded-2xl flex flex-col overflow-hidden">
 
 			{/* Preview image */}
-			<div className="h-[180px] overflow-hidden border-b-2 border-jade">
+			<div className="flex justify-center items-center bg-black/20 border-b-2 border-jade overflow-hidden">
 				<img
 					src={image}
 					alt={alt}
-					className="w-full h-full object-cover"
+					className="w-full max-h-[320px] object-contain"
 					loading="lazy"
 				/>
 			</div>
@@ -45,21 +45,23 @@ function ProjectCard({ image, alt, title, description, stack, href }) {
 				</div>
 
 				{/* "Ver proyecto" button */}
-				<div className="flex mt-2">
-					<a
-						href={href}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="
-							bg-bgMain border border-jade text-textMain
-							rounded-lg py-1 px-4 text-base font-medium cursor-pointer
-							transition-colors duration-300
-							hover:bg-jade
-						"
-					>
-						Ver proyecto
-					</a>
-				</div>
+				{href && (
+					<div className="flex mt-2">
+						<a
+							href={href}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="
+								bg-bgMain border border-jade text-textMain
+								rounded-lg py-1 px-4 text-base font-medium cursor-pointer
+								transition-colors duration-300
+								hover:bg-jade
+							"
+						>
+							Ver proyecto
+						</a>
+					</div>
+				)}
 
 			</div>
 		</div>
